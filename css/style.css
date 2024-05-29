@@ -7,8 +7,8 @@
 }
 
 .item {
-    width: 100px;
-    height: 100px;
+    width: 360px;
+    height: 360px;
 }
 
 .text {
@@ -16,6 +16,8 @@
 }
 
 .container {
+    outline: solid black;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
