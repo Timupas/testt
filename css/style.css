@@ -7,11 +7,14 @@
 }
 
 .item {
-    width: 400px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
 }
 
 .text {
     color: aqua;
 }
 
+.container {
+    margin-left: auto;
+}
