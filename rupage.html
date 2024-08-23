@@ -126,7 +126,7 @@
 <body>
     <header class="header"> 
         <div class="container">
-      <a href="./index.html">
+      <a href="./rupage.html">
         <svg class="icon-logo-icon">
             <use href="./img/symbol-defs.svg#icon-logo-icon"></use>
         </svg>
@@ -140,8 +140,8 @@
     <div class="chat-container">
         <div class="chat-box" id="chat-box"></div>
         <div class="input-container">
-            <input type="text" id="user-input" placeholder="Type your massege..." />
-            <button id="send-button">Send</button>
+            <input type="text" id="user-input" placeholder="Введите ваше сообщение..." />
+            <button id="send-button">Отправить</button>
         </div>
     </div>
     <script>
@@ -150,7 +150,7 @@
             if (!userInput) return;
 
             // Добавление сообщения пользователя в чат
-            addMessage('user-message', `You: ${userInput}`);
+            addMessage('user-message', `Вы: ${userInput}`);
 
             // Очистка поля ввода
             document.getElementById('user-input').value = '';
@@ -172,11 +172,11 @@
                     // Добавление ответа AI в чат
                     addMessage('ai-message', `AI: ${aiMessage}`);
                 } else {
-                    addMessage('ai-message', 'AI: Sorry, there was an error.');
+                    addMessage('ai-message', 'AI: Извините, произошла ошибка.');
                 }
             } catch (error) {
                 console.error('Error:', error);
-                addMessage('ai-message', 'AI: Sorry, there was an error.');
+                addMessage('ai-message', 'AI: Извините, произошла ошибка.');
             }
         });
 
